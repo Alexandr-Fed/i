@@ -1,0 +1,228 @@
+@import 'vars'; // переменные
+@import 'mixins'; // миксины
+
+// подключаем шрифты плагином google fonts (shift + command + p) команда google fonts: insert css import (назвагие шрифта),взять в лапки
+//&display=swap&subset=cyrillic-ext (добавить параметр для быстрой загрузки и если есть кирилица)
+// @import url('https://fonts.googleapis.com/css?family=Heebo:regular,300,500,700,900&display=swap&subset=cyrillic-ext');
+
+@import 'fonts';
+@import 'icons'; // иконочные шрифты (раскоментировать когда буду использовать)
+@import 'global'; // глобальные стили
+// @import 'popup'; // стили попапа
+// @import 'sliders'; // стили слайдера Swiper
+
+//   *** my styles ***
+// @import 'lightgallery';
+@import 'header';
+@import 'home';
+@import 'footer';
+// ===================================================================================
+
+
+// ===========================================================================
+//   *** media screan ***
+@import 'media';
+@import 'fonts/style.css';
+body{
+    background-color: #ECECEC;
+}
+
+.content{
+    display:flex;
+}
+
+.basket-section{
+    background-color:white;
+    width: 233px;
+    height: 395px;
+    margin : 30px 60px 0px 60px;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
+    &__balance-section{
+        background-color: #EDEDED;
+    }
+}
+
+.button-blue{
+    background-color: #4775EC;
+    color: white;
+    border: none;
+    font-family: 'Montserrat Medium', sans-serif;
+    font-weight: 500;
+}
+
+.button-white{
+    color: #878787;
+    background-color: white;
+    border: 1px solid #A59F9F;
+    text-align: center;
+}
+
+.balance{
+    display: flex;
+    justify-content: space-between;
+    &__title{
+        color: #4775EC;
+        font-size: 16px;
+        font-family: 'Montserrat SemiBold', sans-serif;
+        font-weight: 600;
+        margin: 10px 0 0 10px;
+    }
+    &__quantity{
+        color: #4775EC;
+        font-size: 16px;
+        font-family: 'Montserrat SemiBold', sans-serif;
+        margin: 10px 10px 0 0px;
+        font-weight: 600;
+    }
+    &__transfer{
+        margin: 22px 0px 10px 10px;
+        padding: 5px 10px 5px 10px;
+        font-size: 14px;
+    }
+}
+
+.basket{
+    padding: 0 10px;
+    &__my-products{
+        font-family: 'Montserrat SemiBold', sans-serif;
+        font-size: 18px;
+        text-align: center;
+        margin: 18px 0 18px 0;
+        color: #878787;
+        font-weight: 600;
+    }
+    &__total{
+        color: #4775EC;
+        margin: 10px 0 28px 5px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    &__confirm{
+        height: 48px;
+        width: 212px;
+        font-size:16px;
+        text-align: center;
+        padding: 17px 57px 17px 57px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-bottom: 18px;
+    }
+    &__info{
+        height: 49px;
+        width: 212px;
+        font-family: 'Montserrat Medium', sans-serif;
+        font-weight: 500;
+        font-size: 8px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin-bottom: 18px;
+    }
+    &__reset{
+        margin-left: 42px;
+        text-align: center;
+        font-family: 'Montserrat Medium', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        text-decoration: none;
+        color: #A59F9F;
+   }
+}
+.info-store{
+    height: 143px;
+    width: 988px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.3);
+    margin: 30px 20px 15px 0;
+    padding: 31px 25px 40px 10px;
+    &__subtitle{
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        color:#4775EC;
+        margin-left: 10px;
+    }
+    &__title{
+        color:#4775EC;
+        font-family: 'Montserrat SemiBold', sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 13px;
+    }
+    &__filter{
+        text-align: right;
+    }
+}
+._icon-Filter{
+        color: #4775EC;
+        width: 24px;
+        height: 24px;
+}
+.filter{
+    &__search{
+        border: 1px solid #A59F9F;
+        color:#A59F9F ;
+        border-width: 0.5;
+        width: 107px;
+        height: 22px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+    }
+}
+.products-list{
+    width: 988px;
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 21px;
+        &:last-child{
+            margin-bottom: 10px;
+        }
+    }
+    &__card{
+        width: 232px;
+        background-color: white;
+    }
+    &__description{
+        display: flex;
+        justify-content: space-around;
+        margin:25px 10px;
+    }
+    &__commodity{
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    &__price{
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+.card-img{
+    width: 222px;
+    height: 212px;
+    margin:19px 5px 12px 5px;
+}
+
+.line{
+    background-color: #A59F9F;
+    height: 0.5px;
+}
+
+.line-title{
+    width: 613px;
+    background-color: #A59F9F;
+    height: 1px;
+    margin-left: 10px;
+}
+
+.line-basket{
+    width: 212px;
+    height: 1px;
+    background-color: #A59F9F;
+    margin: 0 auto;
+}

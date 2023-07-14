@@ -1,0 +1,68 @@
+@font-face {
+    font-family:'Montserrat Medium';
+    src: url('Montserrat Medium.eot');
+	src: url('Montserrat Medium.eot?#iefix') format('embedded-opentype'),
+		url('Montserrat Medium.woff2') format('woff2'),
+		url('Montserrat Medium.woff') format('woff'),
+		url('Montserrat Medium.svg#Montserrat Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2044;
+}
+
+@font-face {
+    font-family:'Montserrat SemiBold';
+    src: url('Montserrat SemiBold.eot');
+	src: url('Montserrat SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('Montserrat SemiBold.woff2') format('woff2'),
+		url('Montserrat SemiBold.woff') format('woff'),
+		url('Montserrat SemiBold.svg#Montserrat SemiBold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+
+@font-face {
+    font-family:'Montserrat';
+    src: url('Montserrat Regular.eot');
+	src: url('Montserrat Regular.eot?#iefix') format('embedded-opentype'),
+		url('Montserrat Regular.woff2') format('woff2'),
+		url('Montserrat Regular.woff') format('woff'),
+		url('Montserrat Regular.svg#Montserrat Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2044;
+}
+
+@font-face {
+    font-family: 'icons';
+    src:
+      url('fonts/icons.ttf?4gas74') format('truetype'),
+      url('fonts/icons.woff?4gas74') format('woff'),
+      url('fonts/icons.svg?4gas74#icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="_icon-"], [class*=" _icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icons' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  ._icon-Filter:before {
+    content: "\e900";
+  }

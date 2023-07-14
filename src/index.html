@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{ "title": "Главная" })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html',{})
+      <main class="page">
+        <div class="content">
+          <div class="basket-section">
+            <div class="basket-section__balance-section">
+              <div class="balance-section__balance balance">
+                <span class="balance__title">Мой баланс</span>
+                <div class="balance__quantity">156 с </div>
+              </div>
+              <button class="balance__transfer button-blue">Перевести</button>
+            </div>
+            <div class="basket-section__basket basket">
+              <p class="basket__my-products">Мой выбор</p>
+              <hr class="line-basket">
+              <p class="basket__total total">Итого: 0 с</p>
+              <button class="basket__confirm button-blue">Подтвердить</button>
+              <button class="basket__info button-white">После подтверждения вам будет направлена вам будет направлена информация, как получить выбранные вам товары</button>
+              <a href="#" class="basket__reset"><p>Сбросить выбор</p></a>
+            </div>
+          </div>
+          <div class="shop_content">
+            <div class="info-store">
+              <p class="info-store__subtitle">Бонус-бар</p>
+              <p class="info-store__title">СУВЕНИРНАЯ ПРОДУКЦИЯ “ГАЗПРОМ НЕФТИ”</p>
+              <hr class="line-title">
+              <div class="info-store__filter filter">
+                <!-- <i class="_icon-Filter"></i> -->
+                <select name="sort" class="filter__search">
+                  <option value="all-products">Все товары</option>
+                  <option value="price-asc">По цене, сначала дешевые</option>
+                  <option value="price-desc">По цене, сначала дорогие</option>
+                  <option value="good-asc">По названию, А-Я</option>
+                  <option value="good-desc">По названию, Я-А</option>
+                </select>
+              </div>
+            </div>
+            <div class="products-list">
+              <div class="products-list__row">
+                <div class="products-list__card">
+                  <img class= "card-img" src="images/power-bank.webp" alt="power-bank">
+                  <hr class="line">
+                  <div class="products-list__description">
+                    <p class="products-list__commodity">Power bank</p>
+                    <p class="products-list__price">1000 с</p>
+                  </div>
+                </div>
+                <div class="products-list__card">
+                  <img class= "card-img" src="images/note.webp" alt="">
+                  <hr class="line">
+                  <div class="products-list__description">
+                    <p class="products-list__commodity">Блокнот</p>
+                    <p class="products-list__price">50 с</p>
+                  </div>
+                </div>
+                <div class="products-list__card">
+                  <img class= "card-img" src="images/planer.webp" alt="">
+                  <hr class="line">
+                  <div class="products-list__description">
+                    <p class="products-list__commodity">Ежедневник</p>
+                    <p class="products-list__price">100 с</p>
+                  </div>
+                </div>
+                <div class="products-list__card">
+                  <img class= "card-img" src="images/umbrella.webp" alt="">
+                  <hr class="line">
+                  <div class="products-list__description">
+                    <p class="products-list__commodity">Зонт</p>
+                    <p class="products-list__price">1000 с</p>
+                  </div>
+                </div>
+              </div>
+              <div class="products-list__row">
+                <div class="products-list__card">
+                  <img class= "card-img" src="images/pen.webp" alt="power-bank">
+                  <hr class="line">
+                  <div class="products-list__description">
+                    <p class="products-list__commodity">Ручка</p>
+                    <p class="products-list__price">100 с</p>
+                  </div>
+                </div>
+                <div class="products-list__card">
+                  <img class= "card-img" src="images/backpack.webp" alt="">
+                  <hr class="line">
+                  <div class="products-list__description">
+                    <p class="products-list__commodity">Рюкзак</p>
+                    <p class="products-list__price">1500 с</p>
+                  </div>
+                </div>
+                <div class="products-list__card">
+                  <img class= "card-img" src="images/product1.webp" alt="">
+                  <hr class="line">
+                  <div class="products-list__description">
+                    <p class="products-list__commodity">Товар № 1</p>
+                    <p class="products-list__price">200 с</p>
+                  </div>
+                </div>
+                <div class="products-list__card">
+                  <img class= "card-img" src="images/testbook.webp" alt="">
+                  <hr class="line">
+                  <div class="products-list__description">
+                    <p class="products-list__commodity">Товар для тестирования</p>
+                    <p class="products-list__price">520 с</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+        </div>
+      </main>
+      @@include('html/footer.html',{})
+    </div>
+    @@include('html/popup.html',{}) @@include('html/js.html',{})
+  </body>
+</html>
